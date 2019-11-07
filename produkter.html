@@ -14,6 +14,14 @@
 
     }
 
+    p {
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20%;
+        font-size: 2rem;
+    }
+
     header {
         background-color: white;
         display: flex;
@@ -63,8 +71,29 @@
 
     }
 
+    .img-hover-zoom--basic {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .img-hover-zoom--basic img {
+        transition: transform .5s ease;
+    }
+
+    .img-hover-zoom--basic:hover img {
+        transform: scale(1.1);
+    }
+
+    .produkter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kategori {
+        flex-basis: 300px;
+    }
+
     .item {
-        background-color: red;
         display: grid;
         justify-items: center;
         align-items: center;
@@ -98,7 +127,6 @@
     footer p {
         margin: 0;
     }
-
 </style>
 
 <body>
@@ -117,50 +145,45 @@
         <h1>SLIDESHOW - RØD FARVE INDIKERER MANGEL PÅ IMG</h1>
     </div>
     <div class="produkter">
-        <div id="item1" class="item">
-            <div id="img">
-                <h1>Race</h1>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div id="txt">
-                <p></p>
-            </div>
+        <div class="kategori">
+            <a href="index.html">
+                <div class="img-hover-zoom img-hover-zoom--basic">
+                    <img src="images/City%20tour.svg" alt="city tour">
+                </div>
+            </a>
+            <p>City, Lifestyle & Touring</p>
         </div>
-        <div id="item2" class="item">
-            <div id="img">
-                <h1>City Tour</h1>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div id="txt">
-                <p></p>
-            </div>
+        <div class="kategori">
+            <a href="index.html">
+                <div class="img-hover-zoom img-hover-zoom--basic">
+                    <img src="images/Race.svg" alt="race">
+                </div>
+            </a>
+            <p>Race</p>
         </div>
-        <div id="item3" class="item">
-            <div id="img">
-                <h1>Trekking</h1>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div id="txt">
-                <p></p>
-            </div>
+        <div class="kategori">
+            <a href="index.html">
+                <div class="img-hover-zoom img-hover-zoom--basic">
+                    <img src="images/Trekking.svg" alt="trekking">
+                </div>
+            </a>
+            <p>Trekking</p>
         </div>
-        <div id="item4" class="item">
-            <div id="img">
-                <h1>El-cykler</h1>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div id="txt">
-                <p></p>
-            </div>
+        <div class="kategori">
+            <a href="index.html">
+                <div class="img-hover-zoom img-hover-zoom--basic">
+                    <img src="images/E-bikes.svg" alt="el-cykel">
+                </div>
+            </a>
+            <p>El-cykel</p>
         </div>
-        <div id="item5" class="item">
-            <div id="img">
-                <h1>Design din egen cykel</h1>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div id="txt">
-                <p></p>
-            </div>
+        <div class="kategori">
+            <a href="index.html">
+                <div class="img-hover-zoom img-hover-zoom--basic">
+                    <img src="images/Design.svg" alt="design din egen cykel">
+                </div>
+            </a>
+            <p>Design din egen cykel</p>
         </div>
     </div>
     <footer>
@@ -176,6 +199,4 @@
 
     <script>
     </script>
-</body>
-
-</html>
+</body></html>
