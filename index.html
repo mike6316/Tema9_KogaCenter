@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kogacenter.dk - Gruppe 2</title>
 
     <style>
@@ -15,22 +16,49 @@
             font-weight: lighter;
         }
 
-        .hidden {
-            /* display: none;*/
-            /* transform: scale(0);*/
-            transform: translateX(-100%);
-            opacity: 0;
+        .mobile-container {
+            max-width: 100vw;
+            margin: auto;
+            background-color: white;
+            height: 5vh;
+            color: white;
+            border-radius: 10px;
         }
 
-        #menuknap {
-            display: inline-block;
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            position: relative;
         }
 
-        #menu {
-            list-style-type: none;
-            transition: transform .5s;
-            transform-origin: top left;
+        .topnav #myLinks {
+            display: none;
         }
+
+        .topnav a {
+            color: #55a6d9;
+            width: 100vw;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 6.5vw;
+            height: 3.5vh;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(35, 38, 39);
+            color: white;
+        }
+
 
         header {
             width: 100vw;
@@ -52,9 +80,10 @@
         }
 
         .nav {
-            margin-top: -4vw;
+            margin-top: -3vw;
             text-transform: uppercase;
             margin-left: 45vw;
+            margin-bottom: 1vw;
         }
 
         .nav a {
@@ -166,17 +195,14 @@
         }
 
         @media only screen and (min-width: 600px) {
-            #menuknap {
+            .mobile-container {
                 display: none;
             }
+        }
 
-            #menu.hidden {
-                transform: translateX(0);
-                opacity: 1;
-            }
-
-            #menu li {
-                display: inline-block;
+        @media only screen and (max-width: 599px) {
+            nav {
+                display: none;
             }
         }
 
@@ -189,19 +215,29 @@
             <div id="logo">
                 <a href="index.html"><img src="assets/koga_logo.png" alt="logo"></a>
             </div>
-            <div class="burger">
-                <div id="menuknap">☰</div>
-                <ul id="menu" class="hidden">
-                    <nav class="nav">
-                        <a href="butikken.html">Butikken</a>
-                        <a href="produkter.html">Produkter</a>
-                        <a href="design_din_egen_cykel.html">Design din egen cykel</a>
-                        <a href="kontakt.html">Kontakt</a>
-                    </nav>
-                </ul>
-            </div>
+            <nav class="nav">
+                <a href="butikken.html">Butikken</a>
+                <a href="produkter.html">Produkter</a>
+                <a href="design_din_egen_cykel.html">Design din egen cykel</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
         </nav>
-
+        <div class="mobile-container">
+            <div class="topnav">
+                <div id="logo">
+                    <a href="index.html"><img src="assets/koga_logo.png" alt="logo"></a>
+                </div>
+                <div id="myLinks">
+                    <a href="butikken.html">Butikken</a>
+                    <a href="produkter.html">Produkter</a>
+                    <a href="design_din_egen_cykel.html">Design din egen cykel</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
     </header>
     <div class="slideshow">
         <img src="images/splash1.png">
@@ -263,21 +299,12 @@
         </footer>
     </div>
     <script>
-        window.addEventListener("load", sidenVises);
-
-        function sidenVises() {
-            console.log("sidenVises");
-            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-        }
-
-        function toggleMenu() {
-            console.log("toggleMenu");
-            document.querySelector("#menu").classList.toggle("hidden");
-            let erSkjult = document.querySelector("#menu").classList.contains("hidden");
-            if (erSkjult == true) {
-                document.querySelector("#menuknap").textContent = "☰";
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
             } else {
-                document.querySelector("#menuknap").textContent = "X";
+                x.style.display = "block";
             }
         }
 
