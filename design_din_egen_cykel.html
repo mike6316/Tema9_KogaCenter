@@ -96,26 +96,46 @@
         color: #55a6d9;
     }
 
-    .slideshow {
-        height: 35vh;
-        margin-bottom: 5vw;
-    }
-
-    .slideshow img {
-        margin-top: 3%;
+    .splash {
+        background-image: url(images/Artboard%201.png);
+        width: 96.7vw;
         height: 50vh;
-        width: 98.9vw;
+        background-size: cover;
+        background-position: 40% 0%;
     }
 
-    .description {
+    .description h1 {
+        margin-top: -10vw;
+        font-size: 4rem;
+        color: #55a6d9;
         text-align: center;
     }
 
-    link {
-        display: flex;
+    #txt p {
+        font-size: 1.8rem;
+        color: black;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        text-align: left;
     }
 
-    .link #txt {}
+    #link {
+        color: #55a6d9;
+        text-align: left;
+    }
+
+    #link h2 {
+        margin-left: 10vw;
+        font-size: 2rem;
+    }
+
+    #link a {
+        color: #596970;
+    }
+
+    #link a:hover {
+        color: #55a6d9;
+    }
 
     footer {
         display: flex;
@@ -161,6 +181,16 @@
         .mobile-container {
             display: none;
         }
+
+        .splash {
+            width: 98.9vw;
+            height: 50vh;
+        }
+
+        .description h1 {
+            margin-top: -4vw;
+            margin-bottom: -1vw;
+        }
     }
 
     @media only screen and (max-width: 599px) {
@@ -201,8 +231,7 @@
             </div>
         </div>
     </header>
-    <div class="slideshow">
-        <img src="images/splash1.png">
+    <div class="splash">
     </div>
     <br>
     <br>
@@ -210,20 +239,13 @@
     <br>
     <div class="design">
         <div class="description">
-            <h2>Design din egen cykel</h2>
+            <h1>Design din egen cykel</h1>
             <div id="txt">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magni sit dolorum accusantium, quis necessitatibus ab rem cum voluptas? Assumenda officiis maiores aperiam sit natus tenetur obcaecati, quas laboriosam est.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur error assumenda aspernatur aliquid eveniet, quisquam quos, ut veniam laboriosam molestiae nesciunt consequatur libero excepturi. Id aliquid, cum quod ea nulla!
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magni sit dolorum accusantium, quis necessitatibus ab rem cum voluptas? Assumenda officiis maiores aperiam sit natus tenetur obcaecati, quas laboriosam est.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur error assumenda aspernatur aliquid eveniet, quisquam quos, ut veniam laboriosam molestiae nesciunt consequatur libero excepturi. Id aliquid, cum quod ea nulla!
+                <p>Med Koga Signature kan man bygge sin helt egen cykel! Alle Koga cykler er håndbygget og du kan derfor selv vælge hvordan den skal være. På følgende link kan du se alle mulighederne. Du er også altid velkommen til at komme ned i butikken, så vi sammen kan bygge din drømmecykel, der passer dig og dit behov, da vores passion er gode cykler og tilfredse kunder!</p>
             </div>
         </div>
-        <div class="link">
-            <div id="txt">
-                <h2>Link til Design side:</h2>
-                <a href="https://www.koga.com/en/koga-signature">KOGA Signature Bike Series</a>
-            </div>
+        <div id="link">
+            <h2>Link til Design side: <a href="https://www.koga.com/en/koga-signature">KOGA Signature Bike Series</a></h2>
         </div>
     </div>
     <br>

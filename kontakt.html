@@ -111,15 +111,48 @@
         color: #55a6d9;
     }
 
-    .slideshow {
-        height: 35vh;
-        margin-bottom: 5vw;
+    .splash {
+        background-image: url(images/splash1.png);
+        width: 96.7vw;
+        height: 50vh;
+        background-size: cover;
+        background-position: 70% 0%;
     }
 
-    .slideshow img {
-        margin-top: 3%;
-        height: 50vh;
-        width: 98.9vw;
+    h1 {
+        margin-top: 1.5vw;
+        font-size: 4rem;
+        color: #55a6d9;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        color: #55a6d9;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .kontakt {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .map img {
+        height: 65vh;
+        width: 45vw;
+        margin-left: 10vw;
+    }
+
+    #info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        margin-top: -2vw;
     }
 
     footer {
@@ -166,11 +199,26 @@
         .mobile-container {
             display: none;
         }
+
+        .splash {
+            width: 98.9vw;
+            height: 50vh;
+        }
     }
 
     @media only screen and (max-width: 599px) {
         nav {
             display: none;
+        }
+
+        .map img {
+            height: 40vh;
+            width: 80vw;
+            margin-left: 8vw;
+        }
+
+        #info {
+            margin-left: 30vw;
         }
     }
 
@@ -206,58 +254,53 @@
             </div>
         </div>
     </header>
-    <div class="slideshow">
-        <img src="images/splash1.png">
+    <div class="splash">
     </div>
+    <h1>Kontakt os</h1>
     <div class="kontakt">
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="opening">
-            <h1>Kontakt</h1>
-            <p>
-                Hej allesammen. Cykler cykler cykler
-            </p>
-        </div>
-
-        <div id="adresse">
-            <h2>
-                Her finder du os:
-            </h2>
-            <p>Peter Bangsvej 18</p>
-            <p>2000 Frederiksberg</p>
-        </div>
-        <div id="number">
-            <h2>
-                Kontakt os:
-            </h2>
-            <p>Tlf.: +45 38 86 43 25</p>
-            <p>Email: info@kogacenter.dk</p>
-        </div>
-        <footer>
-            <div id="facebook">
-                <a href="https://www.facebook.com/kogacenter/"><img src="assets/facebook.svg" alt="facebook"></a>
-            </div>
-            <div id="adresse">
+        <div class="map"><a href="https://www.google.dk/maps/place/KOGA+Center+Copenhagen/@55.6789758,12.5156187,17z/data=!4m13!1m7!3m6!1s0x465253c0f812fc99:0xb3e4d14a22c3dfd5!2sPeter+Bangs+Vej+18,+2000+Frederiksberg!3b1!8m2!3d55.679206!4d12.516973!3m4!1s0x465253c0f812fc99:0xbad7fb89d5bd5f06!8m2!3d55.679206!4d12.516973"><img src="images/map.PNG"></a></div>
+        <div id="info">
+            <div class="adresse">
                 <h2>Her finder du os:</h2>
                 <a href="https://www.google.com/maps/place/Peter+Bangs+Vej+18,+2000+Frederiksberg/@55.679209,12.5147843,17z/data=!3m1!4b1!4m5!3m4!1s0x465253c0f812fc99:0xb3e4d14a22c3dfd5!8m2!3d55.679206!4d12.516973">
                     <p>Peter Bangsvej 18,</p>
                     <p>2000 Frederiksberg</p>
                 </a>
             </div>
-            <div id="kontakt">
+            <div class="number">
                 <h2>Kontakt os:</h2>
                 <p>Tlf.: +45 38 86 43 25</p>
                 <p>Email: info@kogacenter.dk</p>
             </div>
-            <div id="tider">
+            <div class="tider">
                 <h2>Åbningstider</h2>
                 <p>Man-Fre 11:00-18:00</p>
                 <p>Lør 09:00-14:00</p>
             </div>
-        </footer>
+        </div>
     </div>
+    <footer>
+        <div id="facebook">
+            <a href="https://www.facebook.com/kogacenter/"><img src="assets/facebook.svg" alt="facebook"></a>
+        </div>
+        <div id="adresse">
+            <h2>Her finder du os:</h2>
+            <a href="https://www.google.com/maps/place/Peter+Bangs+Vej+18,+2000+Frederiksberg/@55.679209,12.5147843,17z/data=!3m1!4b1!4m5!3m4!1s0x465253c0f812fc99:0xb3e4d14a22c3dfd5!8m2!3d55.679206!4d12.516973">
+                <p>Peter Bangsvej 18,</p>
+                <p>2000 Frederiksberg</p>
+            </a>
+        </div>
+        <div id="kontakt">
+            <h2>Kontakt os:</h2>
+            <p>Tlf.: +45 38 86 43 25</p>
+            <p>Email: info@kogacenter.dk</p>
+        </div>
+        <div id="tider">
+            <h2>Åbningstider</h2>
+            <p>Man-Fre 11:00-18:00</p>
+            <p>Lør 09:00-14:00</p>
+        </div>
+    </footer>
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
