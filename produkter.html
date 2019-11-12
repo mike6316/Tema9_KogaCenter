@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
     <title>Kogacenter.dk - Gruppe 2</title>
 </head>
 <style>
     body {
         margin: 0;
         max-width: 100%;
-        font-family: 'Maven Pro', sans-serif;
+        font-family: 'Didact Gothic', sans-serif;
         font-weight: lighter;
     }
 
@@ -27,30 +27,35 @@
         position: fixed;
         background-color: white;
         display: flex;
-        border-bottom: 2px #596970 solid;
     }
 
     header img {
         max-width: 100%;
-        height: 2.5vw;
+        height: 3vw;
         margin: .2vw;
         margin-left: 1vw;
         margin-top: 0.3vw;
     }
 
+    a {
+        text-decoration-line: none;
+    }
+
     .nav {
-        margin: .3vw;
+        margin: .6vw;
         text-transform: uppercase;
-        font-weight: 600;
+        margin-left: 26vw;
     }
 
     .nav a {
-        color: #55a6d9;
+        color: black;
         text-decoration-line: none;
-        font-size: 1.5vw;
-        margin-left: 5vw;
-        border-left: 2px #55a6d9 solid;
+        font-size: 1.5rem;
         padding-left: 2vw;
+    }
+
+    a:hover {
+        color: #55a6d9;
     }
 
     .slideshow {
@@ -61,8 +66,7 @@
     .slideshow img {
         margin-top: 3%;
         height: 50vh;
-        width: 100vw;
-        border-bottom: 2px #596970 solid;
+        width: 98.9vw;
     }
 
     .produkter {
@@ -97,22 +101,20 @@
         flex-basis: 300px;
     }
 
-    .border {
-        border: 2px #596970 solid;
-    }
-
     footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-right: 25%;
-        margin-left: 25%;
+        background-color: rgb(35, 38, 39);
+        width: 98.9vw;
+        height: 20vh;
+        margin-top: 7%;
     }
 
     footer img {
         margin: 1vw;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin-top: 3vw;
+        margin-bottom: 1vw;
         height: 4vw;
     }
 
@@ -121,10 +123,22 @@
         margin-top: 2vw;
         font-size: 20px;
         font-weight: 900;
+        color: white;
+        padding-bottom: 5%;
+        border-bottom: solid #a5a5a5;
     }
 
     footer p {
         margin: 0;
+        color: #a5a5a5;
+    }
+
+    #tider {
+        margin-right: 20%;
+    }
+
+    #facebook {
+        margin-left: 20%;
     }
 
 </style>
@@ -186,20 +200,26 @@
             <h1>Design din egen cykel</h1>
         </div>
     </div>
-    <div class="border"></div>
     <footer>
         <div id="facebook">
             <a href="https://www.facebook.com/kogacenter/"><img src="assets/facebook.svg" alt="facebook"></a>
         </div>
         <div id="adresse">
             <h2>Her finder du os:</h2>
-            <p>Peter Bangsvej 18</p>
-            <p>2000 Frederiksberg</p>
+            <a href="https://www.google.com/maps/place/Peter+Bangs+Vej+18,+2000+Frederiksberg/@55.679209,12.5147843,17z/data=!3m1!4b1!4m5!3m4!1s0x465253c0f812fc99:0xb3e4d14a22c3dfd5!8m2!3d55.679206!4d12.516973">
+                <p>Peter Bangsvej 18,</p>
+                <p>2000 Frederiksberg</p>
+            </a>
         </div>
         <div id="kontakt">
             <h2>Kontakt os:</h2>
             <p>Tlf.: +45 38 86 43 25</p>
             <p>Email: info@kogacenter.dk</p>
+        </div>
+        <div id="tider">
+            <h2>Åbningstider</h2>
+            <p>Man-Fre 11:00-18:00</p>
+            <p>Lør 09:00-14:00</p>
         </div>
     </footer>
 
