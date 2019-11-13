@@ -16,6 +16,25 @@
             font-weight: lighter;
         }
 
+        h1 {
+            font-size: 4rem;
+            color: #55a6d9;
+            text-align: center;
+            margin-top: 2vw;
+            margin-bottom: -1vw;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #55a6d9;
+            text-align: left;
+        }
+
+        p {
+            font-size: 1.4rem;
+            text-align: left;
+        }
+
         .mobile-container {
             max-width: 100vw;
             margin: auto;
@@ -76,7 +95,8 @@
         }
 
         a {
-            text-decoration-line: none;
+            text-decoration-line: underline;
+            color: #55a6d9;
         }
 
         .nav {
@@ -93,10 +113,6 @@
             padding-left: 2vw;
         }
 
-        a:hover {
-            color: #55a6d9;
-        }
-
         .splash {
             background-image: url(images/splash1.png);
             width: 96.7vw;
@@ -105,22 +121,23 @@
             background-position: 70% 0%;
         }
 
-        #video {
-            text-align: center;
-            font-size: 72px;
-            margin-top: 5vw;
-            margin-bottom: 5vw;
-        }
-
-        .history,
-        .store {
+        #history,
+        #store {
             display: flex;
+            flex-wrap: nowrap;
             flex-direction: row;
             margin-left: 10vw;
             margin-right: 10vw;
-            text-align: center;
             margin-bottom: 5vw;
             margin-top: 5vw;
+        }
+
+        #history p {
+            margin-right: 2vw;
+        }
+
+        #history .txt {
+            margin-top: -2vw;
         }
 
         #txt {
@@ -128,27 +145,56 @@
             flex-grow: 1;
         }
 
-        #img {
-            flex-basis: 50vw;
-            flex-grow: 1;
-            background-color: red;
+        #store img {
+            width: 45vw;
+        }
+
+        #store .txt {
+            margin-left: 2vw;
+        }
+
+        #store h3 {
+            font-size: 1.6rem;
+            color: #596970;
+        }
+
+        #moreTxt p {
+            margin-left: 10vw;
+            margin-right: 10vw;
+            margin-top: -3vw;
         }
 
         #overview {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            flex-direction: row;
             margin-left: 10vw;
             margin-right: 10vw;
 
         }
 
-        #overview h1 {
-            flex-basis: 30vw;
-            flex: 1;
-            background-color: red;
-            margin: 2vw;
+        #overview img {
+            width: 100%;
+        }
+
+        .post1 {
+            flex-grow: 1;
+            margin-right: 1vw;
+        }
+
+        .post2 {
+            flex-grow: 1;
+            margin-right: 1vw;
+            margin-left: 1vw;
+        }
+
+        .post3 {
+            flex-grow: 1;
+            margin-left: 1vw;
+        }
+
+        #myKOGA h2 {
             text-align: center;
-            height: 10vw;
         }
 
         footer {
@@ -233,7 +279,27 @@
                 margin-bottom: -10vw;
                 height: 16vw;
             }
-        }
+
+            #history,
+            #store {
+                flex-wrap: wrap;
+            }
+
+            #store {
+                flex-direction: column-reverse;
+            }
+
+            #store img {
+                width: 80vw;
+            }
+
+            #history img {
+                width: 80vw;
+            }
+
+            #overview {
+                flex-wrap: wrap;
+            }
 
     </style>
 </head>
@@ -270,62 +336,70 @@
     </header>
     <div class="splash">
     </div>
-    <br>
-    <div class="index">
-        <div id="video">
-            <h1>Video</h1>
+    <h1>Velkommen til KOGA Center</h1>
+    <div id="history">
+        <div class="txt">
+            <h2>Historien om KOGA</h2>
+            <p>
+                I 1974 grundlagde den tidligere salgschef hos Batavus, Andries Gaastra firmaet Koga. Her var hans ønske at skabe et eksklusivt udvalg af lette cykler, som kunne give kunderne en god oplevelse. Gaastra besluttede sig hurtigt for, at kun materiale fra eksklusive leverandører, var godt nok til at imødekomme den høje forventning til kvaliteten. Dette resulterede i et samarbejde med det japanske firma Miyata, som på dette tidspunkt allerede havde produceret cykelstel i 80 år. Siden da har mærket Koga været indbegrebet af høj kvalitet, specielle cykler, innovativ udvikling, visuelt konsekvente og individuelt bygget til hver enkelte kunde, af en special uddannet mekaniker.
+            </p>
         </div>
-        <div class="history">
-            <div id="txt">
-                <h2>Historien om KOGA</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias iure alias commodi, iusto ea aliquid! Voluptatibus, quis magni aut nobis! Culpa maiores hic voluptates ipsam a vero officiis, nihil, praesentium.
-                </p>
-            </div>
-            <div id="img">
-                <h1>IMG</h1>
-            </div>
+        <div class="img">
+            <img src="images/gaastra.png" alt="mand">
         </div>
-
-        <div class="store">
-            <div id="img">
-                <h1>IMG</h1>
-            </div>
-            <div id="txt">
-                <h2>KOGA butikken</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem laboriosam ab adipisci quia optio totam, minus dolorem enim eveniet quis harum neque sapiente ea aperiam veritatis a ex culpa delectus?
-                </p>
-            </div>
-        </div>
-        <div id="overview">
-            <h1>IMG</h1>
-            <h1>IMG</h1>
-            <h1>IMG</h1>
-        </div>
-        <footer>
-            <div id="facebook">
-                <a href="https://www.facebook.com/kogacenter/"><img src="assets/facebook.svg" alt="facebook"></a>
-            </div>
-            <div id="adresse">
-                <h2>Her finder du os:</h2>
-                <a href="https://www.google.com/maps/place/Peter+Bangs+Vej+18,+2000+Frederiksberg/@55.679209,12.5147843,17z/data=!3m1!4b1!4m5!3m4!1s0x465253c0f812fc99:0xb3e4d14a22c3dfd5!8m2!3d55.679206!4d12.516973">
-                    <p>Peter Bangsvej 18,</p>
-                    <p>2000 Frederiksberg</p>
-                </a>
-            </div>
-            <div id="kontakt">
-                <h2>Kontakt os:</h2>
-                <p>Tlf.: +45 38 86 43 25</p>
-                <p>Email: info@kogacenter.dk</p>
-            </div>
-            <div id="tider">
-                <h2>Åbningstider</h2>
-                <p>Man-Fre 11:00-18:00</p>
-                <p>Lør 09:00-14:00</p>
-            </div>
-        </footer>
     </div>
+    <div id="store">
+        <div class="img">
+            <img src="images/labtest.png" alt="test">
+        </div>
+        <div class="txt">
+            <h2>KOGA butikken</h2>
+            <h3> Koga – kunsten at producere cykler</h3>
+            <p>
+                Når det kommer til Koga deler forhandlere, medarbejdere og kunder en stor lidenskab til cykling, derfor går vi meget op i solid kvalitet, stabilitet og holdbarhed. Dette ligger også til grunde for at Koga kun samarbejder med de bedste leverandører og samarbejdspartnere, når det kommer til udvikling og ibrugtagning af ny komponenter, teknologier, og materialer. For at sikre den høje standard bliver alle dele grundigt testet individuelt og sammen som en komplet cykel, i Kogas in-house testlaboratorium.
+            </p>
+        </div>
+    </div>
+    <div id="moreTxt">
+        <p>Kogas primære design princip er, at design skal være funktionelt. Derfor integrerer de komponenter og dele, hvor det giver mening for et rent udseende og vægttab. Her er styling og matching også af stor betydning, så designet bliver en typisk Koga som er unik og eksklusiv. Koga er velkendt og anerkendt i cykelbranchen for sin stærke og innovative kraft. Et ry de ikke kunne have skabt uden brug af deres eksklusive leverandører og partnere over hele verden. Som endnu en ting stræber Koga altid efter optimering, ved hjælp af nye materialer og komponenter samt udvikle andre trendsættende nyskabelser.</p>
+    </div>
+    <div id="myKOGA">
+        <h2>
+            <a href="https://www.koga.com/en/my-koga-and-i">#MyKOGA&I</a> - Brugernes oplevelser med KOGA</h2>
+    </div>
+    <div id="overview">
+        <div class="post1">
+            <img src="images/post1.png" alt="koga&I">
+        </div>
+        <div class="post2">
+            <img src="images/post2.png" alt="koga&I">
+        </div>
+        <div class="post3">
+            <img src="images/post3.png" alt="koga&I">
+        </div>
+    </div>
+    <footer>
+        <div id="facebook">
+            <a href="https://www.facebook.com/kogacenter/"><img src="assets/facebook.svg" alt="facebook"></a>
+        </div>
+        <div id="adresse">
+            <h2>Her finder du os:</h2>
+            <a href="https://www.google.com/maps/place/Peter+Bangs+Vej+18,+2000+Frederiksberg/@55.679209,12.5147843,17z/data=!3m1!4b1!4m5!3m4!1s0x465253c0f812fc99:0xb3e4d14a22c3dfd5!8m2!3d55.679206!4d12.516973">
+                <p>Peter Bangsvej 18,</p>
+                <p>2000 Frederiksberg</p>
+            </a>
+        </div>
+        <div id="kontakt">
+            <h2>Kontakt os:</h2>
+            <p>Tlf.: +45 38 86 43 25</p>
+            <p>Email: info@kogacenter.dk</p>
+        </div>
+        <div id="tider">
+            <h2>Åbningstider</h2>
+            <p>Man-Fre 11:00-18:00</p>
+            <p>Lør 09:00-14:00</p>
+        </div>
+    </footer>
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
