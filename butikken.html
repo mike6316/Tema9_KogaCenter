@@ -18,8 +18,10 @@
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 4rem;
+        color: #55a6d9;
         text-align: center;
+        margin-top: 0.5vw;
     }
 
     .mobile-container {
@@ -110,6 +112,39 @@
         background-position: 10% 0%;
     }
 
+    #om1 p {
+        font-size: 1.4rem;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #om2 h2 {
+        font-size: 2rem;
+        color: #55a6d9;
+        margin-left: 2vw;
+    }
+
+    #om2 h3 {
+        font-size: 1.6rem;
+        color: #596970;
+        margin-left: 2vw;
+    }
+
+    #om2 p {
+        font-size: 1.4rem;
+        margin-left: 2vw;
+        margin-right: 10vw;
+    }
+
+    .billede {
+        margin-left: 10vw;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
     footer {
         display: flex;
         flex-wrap: wrap;
@@ -192,6 +227,27 @@
             margin-bottom: -10vw;
             height: 16vw;
         }
+
+        .box {
+            flex-wrap: wrap;
+        }
+
+        .billede img {
+            margin-left: 0vw;
+            width: 90%;
+        }
+
+        #om2 p {
+            margin-left: 10vw;
+        }
+
+        #om2 h2 {
+            margin-left: 10vw;
+        }
+
+        #om2 h3 {
+            margin-left: 10vw;
+        }
     }
 
 </style>
@@ -228,50 +284,52 @@
     </header>
     <div class="splash">
     </div>
+    <h1>Koga kunsten at producere cykler</h1>
     <div class="butikken">
-        <div class="history">
-            <div id="img">
-                <img src="" alt="">
+        <div id="om1">
+            <div class="txt">
+                <p>I 2012 åbnede Koga centeret, som en af de første cykelforretninger der kun forhandler Koga cykler. Dette kommer af at vi ønsker at give vores kunder en oplevelse af god kvalitet og luksus, og har en overbevisning om: En gang Koga, altid Koga. Her i butikken giver vi mulighed for at dele en passion for cykling, hvor som helst og når som helst. Derfor er vores produkter skræddersyet til vores kunder for at give det perfekte samspil. Solidt håndværk, er en værdi vi bygger på, derfor har vi uddannet vores teknikere i at samle de eksklusive Koga cykler, som ellers bliver samlet i Holland af en enkelt special uddannet mekaniker.
+
+                    Vores butik ligger i hjertet af Frederiksberg, få kilometer fra Københavns Rådhus. Hvor du her kan finde et stort udvalg mange forskellige Koga cykler. Vores personale er specialister i Koga, og stræber efter at kunne give dig de bedste råd og en kompetent vejledning.</p>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <div id="about_1">
-            <h1>Om butikken</h1>
-            <div id="txt">
-                <p></p>
+        <div class="box">
+            <div class="billede">
+                <div class="jonas">
+                    <img src="images/jonas.jpg" alt="jonas">
+                </div>
+            </div>
+            <div id="om2">
+                <div class="txt">
+                    <h2>Jonas Larsson</h2>
+                    <h3>Ejer & daglig leder</h3>
+                    <p>Jonas Larsson var en af de første i Danmark, til at genneføre cykelmekaniker-uddannelsen, tilbage i 1987, og var Bl.a medstifter af Danmarks første mountain-bike klub (DMK) i 1989. Jonas Larsson har drevet cykelforretning siden 1992, og er en af initiativtagerne, til dannelsen af forretningskæden Cykel-X-Perten både som medejer, og indehaver af Frederiksberg afd. Han er derfor yderst kompetent og erfaren, når det kommer til behovsanalyse og rådgivning, indenfor en bred vifte af cykel-typer/modeller og cykeludstyr. </p>
+                </div>
             </div>
         </div>
-        <div id="about_2">
-            <img src="" alt="">
-            <div id="txt">
-                <p></p>
-            </div>
-        </div>
-        <footer>
-            <div id="facebook">
-                <a href="https://www.facebook.com/kogacenter/"><img src="assets/facebook.svg" alt="facebook"></a>
-            </div>
-            <div id="adresse">
-                <h2>Her finder du os:</h2>
-                <a href="https://www.google.com/maps/place/Peter+Bangs+Vej+18,+2000+Frederiksberg/@55.679209,12.5147843,17z/data=!3m1!4b1!4m5!3m4!1s0x465253c0f812fc99:0xb3e4d14a22c3dfd5!8m2!3d55.679206!4d12.516973">
-                    <p>Peter Bangsvej 18,</p>
-                    <p>2000 Frederiksberg</p>
-                </a>
-            </div>
-            <div id="kontakt">
-                <h2>Kontakt os:</h2>
-                <p>Tlf.: +45 38 86 43 25</p>
-                <p>Email: info@kogacenter.dk</p>
-            </div>
-            <div id="tider">
-                <h2>Åbningstider</h2>
-                <p>Man-Fre 11:00-18:00</p>
-                <p>Lør 09:00-14:00</p>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <div id="facebook">
+            <a href="https://www.facebook.com/kogacenter/"><img src="assets/facebook.svg" alt="facebook"></a>
+        </div>
+        <div id="adresse">
+            <h2>Her finder du os:</h2>
+            <a href="https://www.google.com/maps/place/Peter+Bangs+Vej+18,+2000+Frederiksberg/@55.679209,12.5147843,17z/data=!3m1!4b1!4m5!3m4!1s0x465253c0f812fc99:0xb3e4d14a22c3dfd5!8m2!3d55.679206!4d12.516973">
+                <p>Peter Bangsvej 18,</p>
+                <p>2000 Frederiksberg</p>
+            </a>
+        </div>
+        <div id="kontakt">
+            <h2>Kontakt os:</h2>
+            <p>Tlf.: +45 38 86 43 25</p>
+            <p>Email: info@kogacenter.dk</p>
+        </div>
+        <div id="tider">
+            <h2>Åbningstider</h2>
+            <p>Man-Fre 11:00-18:00</p>
+            <p>Lør 09:00-14:00</p>
+        </div>
+    </footer>
     <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
