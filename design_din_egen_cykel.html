@@ -119,8 +119,7 @@
         }
 
         #link {
-            color: #55a6d9;
-            text-align: left;
+            text-align: center;
         }
 
         #link h2 {
@@ -129,11 +128,13 @@
         }
 
         #link a {
-            color: #596970;
+            color: #55a6d9;
+            text-decoration: underline;
+            font-size: 2rem;
         }
 
         #link a:hover {
-            color: #55a6d9;
+            color: #596970;
         }
 
         footer {
@@ -224,6 +225,7 @@
                 height: 16vw;
             }
         }
+
     </style>
 </head>
 
@@ -271,7 +273,7 @@
             </div>
         </div>
         <div id="link">
-            <h2>Link til Design side: <a href="https://www.koga.com/en/koga-signature">KOGA Signature Bike Series</a></h2>
+            <a href="https://www.koga.com/en/koga-signature" target="_blank">KOGA Signature Bike Series</a>
         </div>
     </div>
     <br>
@@ -299,6 +301,19 @@
     </footer>
 
     <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            window.addEventListener("scroll", visScrollbar);
+        }
+
+        function visScrollbar() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.querySelector("#myBar").style.width = scrolled + % ;
+        }
+
         function myFunction() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
@@ -307,5 +322,8 @@
                 x.style.display = "block";
             }
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

@@ -124,13 +124,13 @@
             text-align: center;
         }
 
-        h2 {
+        #info h2 {
             font-size: 1.8rem;
             color: #55a6d9;
             text-align: left;
         }
 
-        p {
+        #info p {
             font-size: 1.2rem;
             text-align: left;
         }
@@ -153,6 +153,22 @@
             margin-right: 10vw;
             margin-left: 10vw;
             margin-top: -2vw;
+        }
+
+        .number a {
+            color: black;
+        }
+
+        .number a:hover {
+            color: #55a6d9;
+        }
+
+        .adresse a {
+            color: black;
+        }
+
+        .adresse a:hover {
+            color: #55a6d9;
         }
 
         footer {
@@ -248,6 +264,7 @@
                 height: 16vw;
             }
         }
+
     </style>
 </head>
 
@@ -296,7 +313,9 @@
             </div>
             <div class="number">
                 <h2>Kontakt os:</h2>
-                <p>Tlf.: +45 38 86 43 25</p>
+                <a href="tel:+45 38864325">
+                    <p>Tlf.: +45 38 86 43 25</p>
+                </a>
                 <p>Email: info@kogacenter.dk</p>
             </div>
             <div class="tider">
@@ -337,5 +356,8 @@
                 x.style.display = "block";
             }
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
